@@ -15,8 +15,9 @@ public class Main {
 
     public static void main(String[] args) {
         MaterialManager kax = new MaterialManager();
-        Material bot1 = getMaterial();
-        kax.addNewMaterial(bot1);
+//        Material bot1 = getMaterial();
+//        kax.addNewMaterial(bot1);
+        System.out.println(MaterialManager.materialList);
     }
 
     private static Material getMaterial() {
