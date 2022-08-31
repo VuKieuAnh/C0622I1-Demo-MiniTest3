@@ -2,28 +2,26 @@ package controller;
 
 import model.Discount;
 import model.Material;
+import storage.IReadWriteData;
 import storage.ReadWriteFile;
+import storage.ReadWriteFileExcel;
+import storage.ReadWriteText;
 
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
 public class MaterialManager {
+    private static IReadWriteData readFile = new ReadWriteText();
     public static List<Material> materialList;
 
     static {
-        try {
-            materialList = ReadWriteFile.readFile();
-        } catch (IOException e) {
-            e.printStackTrace();
-        } catch (ClassNotFoundException e) {
-            e.printStackTrace();
-        }
+            materialList = readFile.readData();
     }
 
     public void addNewMaterial(Material material){
         materialList.add(material);
-        ReadWriteFile.writeFile(materialList);
+        readFile.writeData(materialList);
     }
 
     //tinh so tien sau giam gia
