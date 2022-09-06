@@ -1,6 +1,6 @@
-package storage;
+package storage.material;
 
-import model.Material;
+import model.material.Material;
 
 import java.util.List;
 

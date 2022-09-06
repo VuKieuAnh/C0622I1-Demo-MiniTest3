@@ -1,4 +1,6 @@
-package model;
+package model.material;
+
+import model.Discount;
 
 import java.io.Serializable;
 import java.time.LocalDate;

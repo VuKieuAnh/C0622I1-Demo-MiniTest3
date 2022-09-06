@@ -1,18 +1,14 @@
 package controller;
 
 import model.Discount;
-import model.Material;
-import storage.IReadWriteData;
-import storage.ReadWriteFile;
-import storage.ReadWriteFileExcel;
-import storage.ReadWriteText;
+import model.material.Material;
+import storage.material.IReadWriteData;
+import storage.material.ReadWriteText;
 
-import java.io.IOException;
-import java.util.ArrayList;
 import java.util.List;
 
 public class MaterialManager {
-    private static IReadWriteData readFile = new ReadWriteText();
+    private static IReadWriteData readFile = ReadWriteText.getInstance();
     public static List<Material> materialList;
 
     static {

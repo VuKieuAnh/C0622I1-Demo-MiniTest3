@@ -1,8 +1,6 @@
-package storage;
+package storage.material;
 
-import model.CrispyFlour;
-import model.Material;
-import model.Meat;
+import model.material.Material;
 
 import java.io.*;
 import java.util.ArrayList;

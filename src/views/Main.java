@@ -1,11 +1,9 @@
 package views;
 
 import controller.MaterialManager;
-import model.CrispyFlour;
-import model.Material;
+import model.material.CrispyFlour;
+import model.material.Material;
 
-import java.time.LocalDate;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
